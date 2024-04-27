@@ -1,7 +1,7 @@
 :host {
 	display: block;
-	height: 50%; /* Ensure it fills the parent vertically */
-	width: 25%; /* Ensure it fills the parent horizontally */
+	height:90%; /* Ensure it fills the parent vertically */
+	width: 50%; /* Ensure it fills the parent horizontally */
 }
 
 .drag-drop-list {
@@ -12,12 +12,13 @@
 	background: white;
 	border-radius: 10px;
 	padding: 10px;
-	overflow-y: scroll; /* Enables vertical scrolling within each list */
-  
+	overflow-y: hidden; /* Enables vertical scrolling within each list */
+
 	//custom design for the scroll bar
-	scrollbar-width: thin;
-	scrollbar-color: #dbc375 white;
-	scroll-behavior: smooth;
+	// scrollbar-width: thin;
+	// scrollbar-color: #dbc375 white;
+	// scroll-behavior: smooth;
+	// scrollbar-gutter: stable;
 }
 
 .drag-drop-list:active {
@@ -31,7 +32,7 @@
 }
 
 .cdk-drag-placeholder {
-	opacity: .25;
+	opacity: 0.25;
 }
 
 // .custom-placeholder {

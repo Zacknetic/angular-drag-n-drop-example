@@ -1,5 +1,5 @@
 <div class="movies-page-container">
-    <app-drag-drop-container [items]="movies" listId="todoList" [connectedLists]="['doneList', 'pinnedList']"></app-drag-drop-container>
-    <app-drag-drop-container [items]="doneMovies" listId="doneList" [connectedLists]="['todoList', 'pinnedList']"></app-drag-drop-container>
+    <app-drag-drop-container [items]="leftItems" listId="leftList" [connectedLists]="['rightList']"></app-drag-drop-container>
+    <app-drag-drop-container [items]="rightItems" listId="rightList" [connectedLists]="['leftList']"></app-drag-drop-container>
   </div>
   

@@ -11,10 +11,10 @@ import { DragDropContainerComponent } from '../../drag-drop/drag-drop-container/
   styleUrl: './movies-page.component.scss'
 })
 export class MoviesPageComponent {
-  movies: Movie[];
-  doneMovies: Movie[] = [];
+  leftItems!: Movie[];
+  rightItems: Movie[] = [];
 
   constructor(private moviesService: MoviesService) {
-    this.movies = this.moviesService.getMovies();
+    this.leftItems = this.moviesService.getMovies();
   }
 }

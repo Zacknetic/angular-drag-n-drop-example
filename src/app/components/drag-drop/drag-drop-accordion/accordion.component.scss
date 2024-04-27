@@ -26,6 +26,7 @@
 
 .accordion-content {
   padding: 10px;
+  cursor: default; /* Default cursor when not dragging */
 }
 
 .title-bar:active {

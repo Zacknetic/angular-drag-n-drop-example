@@ -1,7 +1,8 @@
-<div class="accordion-item">
-	<div class="title-bar" (mouseup)="toggleExpanded($event)">
+<div class="accordion-item" cdkDrag>
+	<div #titleBar class="title-bar" cdkDragHandle>
 		<div class="centered-title">{{ item.title }}</div>
 		<div
+			#pinButton
 			class="pin-button"
 			(click)="pinItem($event)"
 			[style.background]="item.isPinned ? 'green' : 'red'"

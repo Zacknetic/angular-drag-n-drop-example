@@ -7,7 +7,7 @@
 	id="{{ listId }}"
 >
 	<div *ngFor="let movie of items">
-		<div cdkDrag class="drag-item">
+		<div class="drag-item">
 			<!-- <div class="custom-placeholder" *cdkDragPlaceholder></div> -->
 			<app-accordion [item]="movie"></app-accordion>
 		</div>
